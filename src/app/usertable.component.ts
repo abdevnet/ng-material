@@ -18,7 +18,7 @@ export class UsertableComponent implements OnInit {
 
   displayedColumns = ['name', 'email', 'phone', 'company'];
   pageEvent: PageEvent;
-  data: any;
+  data: Observable<User[]>;
 
   // Pagination
   length: number;
